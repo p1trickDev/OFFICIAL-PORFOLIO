@@ -1,5 +1,6 @@
 import React from "react";
 import withGlasses from "../assets/with-glasses.webp";
+import "../css/heroSection.css";
 
 const heroSection = () => {
   return (
