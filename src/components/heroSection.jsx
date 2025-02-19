@@ -7,7 +7,7 @@ const heroSection = () => {
     <section className="hero" id="home">
       <div className="hero-content">
         <img src={withGlasses} alt="With Glasses" className="hero-image" />
-        <h1 className="hero-title">Fitzpatrick Managuit (p1trickDev)</h1>
+        <h2 className="hero-title">Fitzpatrick Managuit (p1trickDev)</h2>
         <p className="hero-subtitle">
           Full Stack Developer
           <br />
