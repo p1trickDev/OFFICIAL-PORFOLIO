@@ -1,9 +1,6 @@
-//import { useState } from "react";
 import "../css/navBar.css";
-import Switch from "./Switch";
-//import Notification from "./Notification";
 
-const Navbar = () => {
+const Footer = () => {
   const handleLinkClick = (event, sectionId) => {
     event.preventDefault();
     const section = document.getElementById(sectionId);
@@ -11,10 +8,8 @@ const Navbar = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">p1trickDev</div>
+    <footer className="navbar">
       <ul className="navbar-links">
         <li>
           <a href="#home" onClick={(e) => handleLinkClick(e, "home")}>
@@ -27,26 +22,17 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#skills" onClick={(e) => handleLinkClick(e, "skills")}>
-            Skills
-          </a>
+          <a>Skills</a>
         </li>
         <li>
-          <a href="#projects" onClick={(e) => handleLinkClick(e, "projects")}>
-            Projects
-          </a>
+          <a>Projects</a>
         </li>
         <li>
-          <a href="#contact" onClick={(e) => handleLinkClick(e, "contact")}>
-            Contact
-          </a>
+          <a>Contact</a>
         </li>
       </ul>
-      <div className="navbar-switch">
-        <Switch />
-      </div>
-    </nav>
+    </footer>
   );
 };
 
-export default Navbar;
+export default Footer;
