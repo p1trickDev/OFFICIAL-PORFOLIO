@@ -1,21 +1,38 @@
-//import { useState } from "react";
+import { useState } from "react";
 import "../css/navBar.css";
 import Switch from "./Switch";
-//import Notification from "./Notification";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const handleLinkClick = (event, sectionId) => {
     event.preventDefault();
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+    setMenuOpen(false); // Close menu when a link is clicked
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-brand">p1trickDev</div>
-      <ul className="navbar-links">
+
+      {/* Hamburger menu button */}
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
         <li>
           <a href="#home" onClick={(e) => handleLinkClick(e, "home")}>
             Home
