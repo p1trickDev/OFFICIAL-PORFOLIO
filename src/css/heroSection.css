@@ -55,7 +55,6 @@
   }
 }
 
-/* Add these media queries at the end of heroSection.css */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 1.8rem;

@@ -111,6 +111,6 @@
     position: fixed;
     top: 10px;
     right: 80px;
-    z-index: 10;
+    z-index: 1;
   }
 }

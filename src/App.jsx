@@ -5,7 +5,7 @@
 import NavBar from "./components/navBar.jsx";
 import HeroSection from "./components/heroSection.jsx";
 import AboutMe from "./components/aboutMe.jsx";
-import Footer from "./components/footer.jsx";
+//import Footer from "./components/footer.jsx";
 //import Skills from "./components/skills.jsx";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <HeroSection />
       <AboutMe />
       {/* <Skills /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
